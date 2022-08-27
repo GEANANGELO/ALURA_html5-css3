@@ -1,0 +1,118 @@
+/*HEADER*/
+header{
+    background: #BBBBBB;
+    padding: 20px 0; 
+    /*espaçamento interno ,entre a margem e o conteudo */
+}
+
+.caixa {
+    position: relative; 
+        /*descolca o elemento, transborda em relacao a posicao inicial*/
+    width: 940px; 
+        /*alinhar uma div ao centro usa-se margin automático*/
+    margin: 0 auto;
+    
+    
+}
+
+nav{
+        /*posicionar o elemento em qlqr lugar da pag*/
+    position: absolute;
+    top: 110px;
+    right: 0;    
+}
+
+nav li {
+    /*tela em linha*/
+    display: inline;
+    /*espaçamento externo entre os itens de navegaçao*/
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    /*todo o texto em maiusculo*/
+    text-transform: uppercase; 
+    color: #000000;
+    /*peso da fonte negrito*/
+    font-weight: bold;
+    font-size: 22px;
+    /*nenhuma decoraçao do texto*/
+    text-decoration: none;
+}
+
+nav a:hover{
+    /*cor e decoracao dos itens ao passar o mouse encima*/
+    color:rgba(133, 115, 13, 0.829);
+    text-decoration: underline;
+}
+
+/*MAIN DE CONTATOS*/
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block; /*alterando o item inline p/ bloco*/
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+/*form input, form textarea*/
+.input-padrao{
+    display: block; /*alterando o item inline p/ bloco*/
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: rgba(255, 166, 0, 0.801);
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    transition: 1s all;  /*para prover uma transição visual de um elemento.*/
+    cursor: pointer; /*quando o mouse passar emcima ele muda para a maozinha*/
+}
+.enviar:hover{ /* quando mouser passar em cima*/
+    background: rgb(85, 62, 20);
+    transform: scale(1.2);  /*aumentar tamanho proporcionalmente ao passar o mouse*/
+    transform: rotate(10deg); /* girar quando mouser passar em cima*/
+}
+
+table {
+    margin: 20px 0 40px;
+}
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 16px;
+}
+
+/*FOOTER*/
+footer {
+    text-align: center;
+    background:grey;
+    /*background: url("");*/
+    padding: 30px 0 0;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 15px;
+    margin-top: 10px;
+}
